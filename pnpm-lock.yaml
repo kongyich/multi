@@ -7,6 +7,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
+  zustand:
+    specifier: ^4.3.7
+    version: registry.npmmirror.com/zustand@4.3.7(react@18.2.0)
 
 devDependencies:
   '@types/react':
@@ -1079,6 +1082,17 @@ packages:
       picocolors: registry.npmmirror.com/picocolors@1.0.0
     dev: true
 
+  registry.npmmirror.com/use-sync-external-store@1.2.0(react@18.2.0):
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz}
+    id: registry.npmmirror.com/use-sync-external-store/1.2.0
+    name: use-sync-external-store
+    version: 1.2.0
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
   registry.npmmirror.com/vite@4.2.0:
     resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-4.2.0.tgz}
     name: vite
@@ -1119,3 +1133,22 @@ packages:
     name: yallist
     version: 3.1.1
     dev: true
+
+  registry.npmmirror.com/zustand@4.3.7(react@18.2.0):
+    resolution: {integrity: sha512-dY8ERwB9Nd21ellgkBZFhudER8KVlelZm8388B5nDAXhO/+FZDhYMuRnqDgu5SYyRgz/iaf8RKnbUs/cHfOGlQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/zustand/-/zustand-4.3.7.tgz}
+    id: registry.npmmirror.com/zustand/4.3.7
+    name: zustand
+    version: 4.3.7
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: registry.npmmirror.com/react@18.2.0
+      use-sync-external-store: registry.npmmirror.com/use-sync-external-store@1.2.0(react@18.2.0)
+    dev: false
